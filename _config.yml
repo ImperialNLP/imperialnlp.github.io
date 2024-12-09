@@ -56,7 +56,7 @@ og_image: /assets/img/epidiagnostics-logo.png # The site-wide (default for all l
 github_username: # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
-linkedin_username: tpisanic # your LinkedIn user name
+linkedin_username: nikolai-rozanov-ai # your LinkedIn user name
 scholar_userid: W7_NTgMAAAAJ # your Google Scholar ID
 orcid_id: 0000-0001-5796-0836 # your ORCID ID
 medium_username: # your Medium username
@@ -277,7 +277,7 @@ enable_masonry:             true   # enables automatic project cards arangement
 enable_math:                true   # enables math typesetting (uses MathJax)
 enable_tooltips:            false  # enables automatic tooltip links generated
                                    # for each section titles on pages and posts
-enable_darkmode:            true   # enables switching between light/dark modes
+enable_darkmode:            false   # enables switching between light/dark modes
 enable_navbar_social:       false  # enables displaying social links in the
                                    # navbar on the about page
 enable_project_categories:  true   # enables categorization of projects into
