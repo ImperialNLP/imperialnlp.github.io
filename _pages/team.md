@@ -3,7 +3,7 @@ layout: page
 permalink: /team.html
 title: team
 page-title: Team
-description: We have a truly interdisciplinary team that allows us to carry out studies ranging from exploring basic epigenetic mechanisms of carcinogenesis to the development of next-generation microfluidic epigenetic diagnostic platforms. Here are the members and faculty affiliated with the Epidiagnostics Group at JHU. 
+description: NLP Group at Imperial College London Computing Department.
 nav: true
 nav_order: 2
 nav_rank: 2
