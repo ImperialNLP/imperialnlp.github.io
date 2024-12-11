@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: research
 page-title: Research
@@ -8,7 +8,7 @@ nav: true
 nav_order: 3
 display_categories: [cancer diagnostics, cancer biology & biomarker discovery]
 horizontal: false
----
+--- -->
 
 <!-- pages/projects.md -->
 <div class="projects">

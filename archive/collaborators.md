@@ -7,7 +7,7 @@ nav: false
 nav_rank: 5
 nav_order: 5
 sitetitle: true
-description: Great science takes a great team. The Epidiagnostics Group works with an ever-expanding cadre of physicians, scientists and engineers to solve some of the most pressing challenges in cancer research. Here are some of our extraordinary collaborators.
+description: Great science takes a great team. NLP Groupat Imperial is.
 
 ---
 
@@ -31,4 +31,3 @@ description: Great science takes a great team. The Epidiagnostics Group works wi
         </div>
     {% endfor %}
 </div>
-

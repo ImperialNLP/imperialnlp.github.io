@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: submenus
 nav: true
@@ -10,4 +10,4 @@ children:
     - title: divider
     - title: collaborators
       permalink: /collaborators.html
----
+--- -->
