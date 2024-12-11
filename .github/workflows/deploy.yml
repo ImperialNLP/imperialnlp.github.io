@@ -72,6 +72,9 @@ jobs:
         with:
           ruby-version: "3.3.5"
           bundler-cache: true
+    - name: Install deps
+      run: |
+        npm install -g mermaid.cli
       # - name: Setup Python 🐍
       #   uses: actions/setup-python@v5
       #   with:
