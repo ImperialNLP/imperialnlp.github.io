@@ -1,4 +1,4 @@
-name: Build and Deploy Site
+name: Build and Deploy Site V1
 
 on:
   push:
