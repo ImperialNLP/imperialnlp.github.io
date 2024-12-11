@@ -72,11 +72,8 @@ jobs:
         with:
           ruby-version: "3.3.5"
           bundler-cache: true
-    - name: Install deps
-      run: |
-        npm install -g mermaid.cli
-      # - name: Setup Python 🐍
-      #   uses: actions/setup-python@v5
+        # - name: Setup Python 🐍
+        #   uses: actions/setup-python@v5
       #   with:
       #     python-version: "3.13"
       #     cache: "pip" # caching pip dependencies
@@ -91,6 +88,7 @@ jobs:
       # (this was inside the run function) pip3 install --upgrade nbconvert
         run: |
           export JEKYLL_ENV=production
+          bundle install
           bundle exec jekyll build
       # - name: Purge unused CSS 🧹
       #   run: |
