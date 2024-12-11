@@ -16,15 +16,15 @@ profile:
     name: Nikolai Rozanov
     position: PhD
     align: right
-    image: brad-profile.jpg
+    image: nikolai.jpg
     role: PhD
     orcid: 
     website: 
     email: nikolai.rozanov13@imperial.ac.uk
     github: 
     address: >
-        Huxley 558
-        Imperial College London
+        Huxley 551</br>
+        Imperial College London</br>
         London
 ---
 

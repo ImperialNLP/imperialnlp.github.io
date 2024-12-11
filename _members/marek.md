@@ -16,7 +16,7 @@ profile:
     name: Marek Rei, PhD
     position: Seniour Lecturer in NLP
     align: right
-    image: brad-profile.jpg
+    image: marek.png
     role: Staff
     orcid: 
     website: 
