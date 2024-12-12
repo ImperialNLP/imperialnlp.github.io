@@ -16,8 +16,8 @@ profile:
     position: PhD
     image: nikolai.jpg
     role: PhD
-    orcid: 
-    website: 
+    orcid: 0000-0003-0274-8832
+    website: nikolairozanov.com
     scholar: fi-feOEAAAAJ
     email: nikolai.rozanov13@imperial.ac.uk
     github: ai-nikolai

@@ -34,7 +34,7 @@ layout: default
             {% if page.profile.linkedin %}<br /><a href="https://linkedin.com/{{ page.profile.linkedin }}" class="card-link" target="_blank"><i class="fab fa-linkedin"></i> {{ page.profile.linkedin }}</a>{% endif %}
             {% if page.profile.github %}<br /><a href="https://github.com/{{ page.profile.github }}" target="_blank"><i class="fab fa-github"></i> {{ page.profile.github }}</a>{% endif %}
             {%- if page.profile.scholar -%}<br /><a href="https://scholar.google.com/citations?user={{ page.profile.scholar }}" title="Google Scholar"><i class="ai ai-google-scholar"></i> {{ page.profile.name }}</a>{% endif %}
-            {% if page.profile.website %}<br /><br />><small class="test-muted"><a href="{{ page.profile.website }}" target="_blank"><i class="fas fa-globe"></i> {{ page.profile.website }}</a></small>{% endif %}
+            {% if page.profile.website %}<br /><br /><small class="test-muted"><a href="{{ page.profile.website }}" target="_blank"><i class="fas fa-globe"></i> {{ page.profile.website }}</a></small>{% endif %}
             {% if page.profile.email %}<br /><small class="test-muted"><a href="mailto:{{ page.profile.email }}"><i class="fas fa-envelope"></i> {{ page.profile.email }}</a></small>{% endif %}
           </span>                  
           </p>
