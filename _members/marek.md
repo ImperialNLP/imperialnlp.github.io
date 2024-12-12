@@ -2,7 +2,7 @@
 layout: about
 inline: false
 group: Staff
-group_rank: 1
+group_rank: 2
 
 title: Dr Marek Rei
 lastname: Rei
@@ -18,18 +18,20 @@ profile:
     role: Staff
     orcid: 
     website: 
+    scholar: 
     email: marek.rei@imperial.ac.uk
-    linkedin: 
     github: 
-    supervisor:
+    linkedin: 
+    supervisor: 
     address: >
         Huxley 551<br />
         Imperial College London<br />
         London
 ---
 
+
 ## Short Bio
 
-Seniour Lecturer in NLP at Imperial College London. PhD from Cambridge University.
-Staff in NLP. Previously Cambridge.
+Seniour Lecturer in NLP at Imperial College London. PhD from Cambridge University. 
+Staff in NLP. Previously, Marek was at Cambridge.
 

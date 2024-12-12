@@ -32,5 +32,6 @@ profile:
 
 ## Short Bio
 
-Nikolai is a PhD student with Dr Marek Rei. He works on LLM Agents. Previously, Nikolai has co-founded an NLP start-up.
+Nikolai is a PhD student with Dr Marek Rei. He works on LLM Agents. 
+Previously, Nikolai has co-founded an NLP start-up.
 

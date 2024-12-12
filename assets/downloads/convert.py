@@ -34,13 +34,13 @@ teaser: >
 
 profile:
     name: {row['Name']}
-    position: {row['Status']}
+    position: {row['Position']}
     image: {row['Picture']}
     role: {row['Status']}
     orcid: {row['ORCID']}
     website: {row['Website']}
     scholar: {row['Google Scholar']}
-    email: {row['Name'].split()[0].lower()}.{row['Name'].split()[-1].lower()}13@imperial.ac.uk
+    email: {row['Email']}
     github: {row['Github']}
     linkedin: {row['Linkedin']}
     supervisor: {row['Supervisor']}
@@ -57,6 +57,8 @@ profile:
 
 """
             first_name = row['Name'].split()[0].lower()
+            if (first_name.lower() == "dr") or first_name.lower() == "dr.":
+                first_name = row["Name"].split()[1].lower()
 
             # Create output filename
             output_filename = os.path.join(output_dir, f"{first_name}.md")
