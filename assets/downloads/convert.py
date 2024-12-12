@@ -1,45 +1,81 @@
+import os
 import csv
-import yaml
+import sys
 
-def csv_to_yaml(csv_path, yaml_path):
-    # Read the CSV file
-    with open(csv_path, 'r') as csvfile:
-        reader = csv.reader(csvfile)
-        data = dict(reader)
+def transform_tsv_to_yaml(input_file, output_dir='_members'):
+    """
+    Transform a TSV file with researcher information into a YAML/Markdown profile.
     
-    # Prepare the YAML structure
-    yaml_data = {
-        'layout': data['layout'],
-        'inline': data['inline'] == 'false',  # Convert to boolean
-        'group': data['group'],
-        'group_rank': int(data['group_rank']),
-        'title': data['title'],
-        'description': data['description'],
-        'lastname': data['lastname'],
-        'publications': data['publications'],
-        'teaser': data['teaser'],
-        'profile': {
-            'name': data['profile_name'],
-            'position': data['profile_position'],
-            'align': data['profile_align'],
-            'image': data['profile_image'],
-            'role': data['profile_role'],
-            'orcid': data['profile_orcid'] or None,
-            'website': data['profile_website'] or None,
-            'email': data['profile_email'],
-            'github': data['profile_github'] or None,
-            'address': data['profile_address'].replace('\n', '</br>')
-        }
-    }
-    
-    # Write the YAML file
-    with open(yaml_path, 'w') as yamlfile:
-        yamlfile.write("---\n")
-        yaml.dump(yaml_data, yamlfile, default_flow_style=False)
-        yamlfile.write("\nSeniour Lecturer in NLP at Imperial College London. PhD from Cambridge University.\n\n")
-        yamlfile.write("## Short Bio\n\n")
-        yamlfile.write(data['short_bio'])
+    Args:
+        input_file (str): Path to the input TSV file
+    """
+    os.makedirs(output_dir, exist_ok=True)
 
-# Example usage
+    # Read the TSV file
+    with open(input_file, 'r', encoding='utf-8') as tsv_file:
+
+        tsv_reader = csv.DictReader(tsv_file) #, delimiter='\t') #in case we want tsv file instead.
+        
+        # Process each row (assuming single row in this case)
+        for row in tsv_reader:
+            # Generate the output
+            output = f"""---
+layout: about
+inline: false
+group: {row['Status']}
+group_rank: 2
+
+title: {row['Name']}
+lastname: {row['Name'].split()[-1]}
+publications: 'author^=*{row['Name'].split()[-1]}'
+
+teaser: >
+    {row['Short Snippet']}
+
+profile:
+    name: {row['Name']}
+    position: {row['Status']}
+    image: {row['Picture']}
+    role: {row['Status']}
+    orcid: {row['ORCID']}
+    website: {row['Website']}
+    scholar: {row['Google Scholar']}
+    email: {row['Name'].split()[0].lower()}.{row['Name'].split()[-1].lower()}13@imperial.ac.uk
+    github: {row['Github']}
+    linkedin: {row['Linkedin']}
+    supervisor: {row['Supervisor']}
+    address: >
+        {row['Room']}<br />
+        Imperial College London<br />
+        London
+---
+
+
+## Short Bio
+
+{row['Longer Bio']}
+
+"""
+            first_name = row['Name'].split()[0].lower()
+
+            # Create output filename
+            output_filename = os.path.join(output_dir, f"{first_name}.md")
+            
+            # Write to file
+            with open(output_filename, 'w', encoding='utf-8') as output_file:
+                output_file.write(output)
+            
+            print(f"Created profile for {row['Name']} at {output_filename}")
+
+
+def main():
+    if len(sys.argv) != 2:
+        print("Using default file name: NLPLists(People).csv")
+        input_file="NLPLists(People).csv"
+    else:
+        input_file = sys.argv[1]
+
+    transform_tsv_to_yaml(input_file)
+
 if __name__ == "__main__":
-    csv_to_yaml('profile.csv', 'marek_rei.md')
+    main()
