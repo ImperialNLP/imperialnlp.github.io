@@ -69,13 +69,16 @@ profile:
 
 
 def main():
-    if len(sys.argv) != 2:
-        print("Using default file name: NLPLists(People).csv")
-        input_file="NLPLists(People).csv"
-    else:
-        input_file = sys.argv[1]
 
-    transform_tsv_to_yaml(input_file)
+    input_file="NLPLists(People).csv"
+    output = "_members"
+
+    if len(sys.argv) == 2:
+        if sys.argv[1] == "production":
+            output = "../../_members"
+
+
+    transform_tsv_to_yaml(input_file, output)
 
 if __name__ == "__main__":
     main()
