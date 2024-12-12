@@ -2,35 +2,35 @@
 layout: about
 inline: false
 group: PhD
-group_rank: 1
+group_rank: 2
 
 title: Nikolai Rozanov
-description: Profile of Nikolai Rozanov, PhD Student in LLMs and LLM Agents.
 lastname: Rozanov
 publications: 'author^=*Rozanov'
 
 teaser: >
-    I am a PhD working on LLM Agents.
+    CS PhD Student in the Computing Department working on LLMs and LLM Agents.
 
 profile:
     name: Nikolai Rozanov
     position: PhD
-    align: right
     image: nikolai.jpg
     role: PhD
     orcid: 
     website: 
+    scholar: fi-feOEAAAAJ
     email: nikolai.rozanov13@imperial.ac.uk
-    github: 
+    github: ai-nikolai
+    linkedin: nikolai-rozanov-ai
+    supervisor: Dr Marek Rei
     address: >
-        Huxley 551</br>
-        Imperial College London</br>
+        Huxley 558<br />
+        Imperial College London<br />
         London
 ---
 
-LLM Agents PhD. Previously BSc in Mathematics from Imperial.
 
 ## Short Bio
 
-PhD in LLM Agents.
+Nikolai is a PhD student with Dr Marek Rei. He works on LLM Agents. Previously, Nikolai has co-founded an NLP start-up.
 
