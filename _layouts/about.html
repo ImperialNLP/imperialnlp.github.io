@@ -58,8 +58,8 @@ layout: default
           <div class="" width=60%>
             {{ content }}
           </div>
-          {%- endif %}
-
+          
+          {%- else %}
           <div class="clearfix">
               <div class="about-logo">
               <!-- <img style="padding-bottom: 1rem; margin-right: 2rem"; src="{{ '/assets/img/imperial-main-image.jpg' |   relative_url }}"; width=80%> -->
@@ -74,6 +74,7 @@ layout: default
 
 
           </div>
+          {%- endif %}
 
           {% if page.news -%}
           <!-- News -->

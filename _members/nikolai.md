@@ -32,6 +32,7 @@ profile:
 
 ## Short Bio
 
-Nikolai is a PhD student with Dr Marek Rei. He works on LLM Agents. 
-Previously, Nikolai has co-founded an NLP start-up.
+Nikolai is pursuing a PhD at Imperial College London under the supervision of Dr Marek Rei on Foundation Models, LLM agents. Specifically, Nikolai is looking at long-range reasoning, test-time computation, and generally improving LLM reasoning. 
+
+In his recent experience, Nikolai has also been the CTO and Head of Research of an AI deep-tech start-up based out of London for 7 years. His experience spanned from deploying and productionising AI products, to publishing papers in Tier-1 venues, to research collaborations with leading research labs (including with Prof. Iryna Gurevych).
 

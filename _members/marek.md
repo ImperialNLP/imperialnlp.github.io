@@ -1,7 +1,7 @@
 ---
 layout: about
 inline: false
-group: Staff
+group: Faculty
 group_rank: 1
 
 title: Dr Marek Rei
@@ -15,7 +15,7 @@ profile:
     name: Dr Marek Rei
     position: Seniour Lecturer in NLP
     image: marek.png
-    role: Staff
+    role: Faculty
     orcid: 
     website: 
     scholar: 

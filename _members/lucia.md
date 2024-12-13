@@ -1,7 +1,7 @@
 ---
 layout: about
 inline: false
-group: Staff
+group: Faculty
 group_rank: 2
 
 title: Prof. Lucia Specia
@@ -15,7 +15,7 @@ profile:
     name: Prof. Lucia Specia
     position: Professor in NLP
     image: lucia.jpeg
-    role: Staff
+    role: Faculty
     orcid: 
     website: 
     scholar: 
