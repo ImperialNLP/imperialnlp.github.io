@@ -57,7 +57,7 @@ profile:
 
 """
             first_name = row['Name'].split()[0].lower()
-            if (first_name.lower() == "dr") or first_name.lower() == "dr.":
+            if (first_name.lower() == "dr") or first_name.lower() == "dr." or first_name.lower() == "prof" or first_name.lower() == "prof." or first_name.lower() == "professor":
                 first_name = row["Name"].split()[1].lower()
 
             # Create output filename
