@@ -15,7 +15,7 @@ def transform_tsv_to_yaml(input_file, output_dir='_members'):
     with open(input_file, 'r', encoding='utf-8') as tsv_file:
 
         tsv_reader = csv.DictReader(tsv_file) #, delimiter='\t') #in case we want tsv file instead.
-        
+
         # Process each row (assuming single row in this case)
         for row in tsv_reader:
             # Generate the output
@@ -23,7 +23,7 @@ def transform_tsv_to_yaml(input_file, output_dir='_members'):
 layout: about
 inline: false
 group: {row['Status']}
-group_rank: 2
+group_rank: {1 if "marek rei" in row["Name"].lower() else 2}
 
 title: {row['Name']}
 lastname: {row['Name'].split()[-1]}

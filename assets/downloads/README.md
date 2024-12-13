@@ -14,3 +14,21 @@ python3 convert.py
 ```bash
 python3 convert.py production
 ```
+
+4. Generate BIB entries:
+```bash
+python3 transform_bibtext.py production
+```
+
+
+### Testing website locally:
+
+1. Installation
+```bash
+bundle install
+```
+
+2. Running locally:
+```bash
+bundle exec jekyll serve
+```
