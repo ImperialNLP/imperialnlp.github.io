@@ -45,6 +45,14 @@ def transform_bibtex_entry(original_entry):
         if arxiv_number:
             html = f"https://arxiv.org/abs/{arxiv_number}"
 
+
+    pdf_match = re.search(r'pdf\s*=\s*{([^}]+)}', original_entry)
+    pdf = url_match.group(1).strip() if pdf_match else ''
+    if not pdf:
+        arxiv_number = extract_arxiv_number(original_entry)
+        if arxiv_number:
+            pdf = f"https://arxiv.org/pdf/{arxiv_number}"
+
     
     # Prepare the new fields to insert
     new_fields = [
@@ -52,6 +60,7 @@ def transform_bibtex_entry(original_entry):
         # f'   abbr = {{{abbr}}}',
         '  abbr = { NLP },',
         '  bibtex_show = {true},'
+        '  pdf = {' + pdf + '},'
     ]
     
     # Split the original entry into lines
