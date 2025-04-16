@@ -115,6 +115,7 @@ def accumulate_and_transform_bibtex(input_directory, output_file):
     
     # Iterate through all files in the input directory
     for filename in os.listdir(input_directory):
+        print(f"Processing FIle:{filename}")
         # Check if the file is a .bib file
         if filename.endswith('.bib'):
             input_file = os.path.join(input_directory, filename)
