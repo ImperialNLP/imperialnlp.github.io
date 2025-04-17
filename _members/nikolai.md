@@ -17,11 +17,10 @@ profile:
     image: nikolai.jpg
     role: PhD
     orcid: 0000-0003-0274-8832
-    website: nikolairozanov.com
+    website: https://nikolairozanov.com
     scholar: fi-feOEAAAAJ
     email: nikolai.rozanov13@imperial.ac.uk
     github: ai-nikolai
-    linkedin: nikolai-rozanov-ai
     supervisor: Dr Marek Rei
     address: >
         Huxley 558<br />

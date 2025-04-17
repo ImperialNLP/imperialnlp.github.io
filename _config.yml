@@ -16,7 +16,7 @@ keywords: NLP, Imperial College London, LLMs, LLM Agents  # add your own keyword
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: imperial-favicon.png  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://hunky-d0ry.github.io # the base hostname & protocol for your site
+url: https://doc.ic.ac.uk # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -56,7 +56,7 @@ og_image: /assets/img/imperial-logo.png # The site-wide (default for all links) 
 github_username: # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
-linkedin_username: nikolai-rozanov-ai # your LinkedIn user name
+linkedin_username: #nikolai-rozanov-ai # your LinkedIn user name
 scholar_userid:  # your Google Scholar ID
 orcid_id:  # your ORCID ID
 medium_username: # your Medium username
@@ -89,15 +89,15 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname:  #al-folio # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
 # If you have blog posts published on medium.com or other exteranl sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
+  # - name: medium.com
+  #   rss_url: https://medium.com/@al-folio/feed
 
 # -----------------------------------------------------------------------------
 # Collections

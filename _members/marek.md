@@ -9,11 +9,11 @@ lastname: Rei
 publications: 'author^=*Rei'
 
 teaser: >
-    Marek is a Seniour Lecturer at Imperial College London.
+    Marek is a Senior Lecturer at Imperial College London.
 
 profile:
     name: Dr Marek Rei
-    position: Seniour Lecturer in NLP
+    position: Senior Lecturer in NLP
     image: marek.png
     role: Faculty
     orcid: 

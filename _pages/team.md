@@ -13,7 +13,7 @@ nav_rank: 2
 {% for group in groups %}
 ## {{ group }}
 
- {% assign members = site.members | sort: "group_order" | where: "group", group %}
+{% assign members = site.members | sort: "group_order" | sort: "lastname" | where: "group", group %}
     {% for member in members %}
 <p>
     <div class="card {% if member.inline == false %}hoverable{% endif %}">
@@ -23,7 +23,11 @@ nav_rank: 2
             </div>
             <div class="team col-sm-8 col-md-9">
                 <div class="card-body">
-                    {% if member.inline == false %}{% if member.external == true %} <a href="{{ member.profile.website }}">{% else %}<a href="{{ member.url | relative_url }}">{% endif %}{% endif %}
+                    {% if member.inline == false %}{% if member.external == true %} <a href="{{ member.profile.website }}">
+                    {% else %}
+                    <a href="{{ member.url | relative_url }}">
+                    <!-- <a href="{{ member.profile.website }}"> -->
+                    {% endif %}{% endif %}
                     <h5 class="card-title">{{ member.profile.name }}</h5>
                     {% if member.profile.position %}
                     {% if member.profile.team-position %}<h6 class="card-subtitle mb-2 text-muted">{{ member.profile.team-position }}</h6>
@@ -72,3 +76,4 @@ nav_rank: 2
 </p>
     {% endfor %}
 {% endfor %}
+
