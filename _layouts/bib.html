@@ -23,11 +23,6 @@
           <div class="author">
           {%- for author in entry.author_array -%}
             {%- assign author_is_self = false -%}
-            {%- if author.last == "Pisanic" or author.last == "Pisanic II"%}
-             {%- if site.scholar.first_name contains "Thomas" -%}
-                {%- assign author_is_self = true -%}
-              {%- endif -%}
-            {%- endif -%}
             {%- assign coauthor_url = nil -%}
             {%- if site.data.coauthors[author.last] -%}
               {%- for coauthor in site.data.coauthors[author.last] -%}
@@ -52,7 +47,7 @@
                   {% if coauthor_url -%}
                     {{author.last}}, {{author.first}},&nbsp;
                   {%- else -%}
-                    {{author.last}}, {{author.first}},&nbsp;
+                    {{author.last}}, {{author.first}};&nbsp;
                   {%- endif -%}
                 {%- endif -%}
               {%- else -%}
@@ -95,8 +90,12 @@
           {%- if entry.abstract %}
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           {%- endif %}
-          {%- if entry.arxiv %}
-            <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+          {%- if entry.pdf %}
+            {% if entry.pdf contains '://' -%}
+            <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            {%- else -%}
+            <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            {%- endif %}
           {%- endif %}
           {%- if entry.bibtex_show %}
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
@@ -104,12 +103,8 @@
           {%- if entry.html %}
             <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
           {%- endif %}
-          {%- if entry.pdf %}
-            {% if entry.pdf contains '://' -%}
-            <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-            {%- else -%}
-            <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-            {%- endif %}
+          {%- if entry.arxiv %}
+            <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
           {%- endif %}
           {%- if entry.supp %}
             {% if entry.supp contains '://' -%}
