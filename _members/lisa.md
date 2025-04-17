@@ -32,5 +32,5 @@ profile:
 
 ## Short Bio
 
-I am a PhD student at the Department of Computing of Imperial College London, supervised by Dr Marek Rei. I am fascinated by large foundation models and work on enhancing their planning, reasoning, and general problem-solving abilities.
+I am a PhD student at the Department of Computing of Imperial College London, supervised by Marek Rei. I am fascinated by large foundation models and work on enhancing their planning, reasoning, and general problem-solving abilities. I also have an interest in model robustness to input perturbations and adversarial attacks.
 

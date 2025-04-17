@@ -32,5 +32,5 @@ profile:
 
 ## Short Bio
 
-I am a PhD student in Natural Language Processing, supervised by Marek Rei. My PhD is focussing on creating more robust Natural Language Inference (NLI) models that generalise better to other unseen NLI datasets. Prior to starting the PhD I worked for 6 years as a Consultant at PwC/Strategy&, and recently completed an MSc in Data Science at UCL. I also have a BSc in Mathematics from the University of Warwick, and spent two years as a Mathematics teacher on the Teach First programme.
+I am an NLP PhD student and Apple AI/ML scholar supervised by Marek Rei. My PhD is focussed on creating more robust Natural Language Inference (NLI) models which generalise better to other unseen NLI datasets. I am also interested in model interpretability, where my research has aimed to create inherently interpretable models using atomic decomposition methods. Before my PhD I worked as an analytics consultant at PwC and as a maths teacher on the Teach First programme.
 
