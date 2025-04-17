@@ -4,22 +4,22 @@ Imperial NLP Website:
 [https://nlp.doc.ic.ac.uk]
 
 ## Summary of what you need to do: (see below for details)
-1. Auto-Update profiles (see also `./run_profiles.sh`)
-2. Auto-Update bib entries (see also `./run_bib.sh`)
+1. Auto-Update profiles (see also `assets/downloads/run_profiles.sh`)
+2. Auto-Update bib entries (see also `assets/downloads/run_bib.sh`)
 3. Download images (see below for files; put them under: `assets/img/team` )
 4. Push to repo
 
 
 ## Step1: Auto-update Profile:
 
-See also: `./run_profiles.sh`
+See also: `assets/downloads/run_profiles.sh`
 
 1. Download table (it will have the name `NLPLists(People).csv`)
 
     * Download the following table (as csv). [File -> Export -> Download as csv]
     [https://imperiallondon-my.sharepoint.com/:x:/r/personal/nr1713_ic_ac_uk/_layouts/15/Doc.aspx?sourcedoc=%7B4DE58410-CE4A-4C23-9257-39C162C37101%7D&file=NLPLists.xlsx&action=default&mobileredirect=true]
 
-    * Put it under: `assets/downloads`
+    * Put it under: `assets/downloads/`
 
 
 
@@ -36,7 +36,7 @@ python3 convert.py production
 ```
 
 ## Step 2: Auto-update `__bibliography/papers.bib`:
-See also: `./run_bib.sh`
+See also: `assets/downloads/run_bib.sh`
 
 1. Download Bib files (as e.g. .zip file) from:
 
