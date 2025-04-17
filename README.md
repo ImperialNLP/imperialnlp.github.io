@@ -103,7 +103,7 @@ Images
 
 
 ## List of maintainers:
-* Nikolai Rozanov:  2024 - Present
+* (Nikolai Rozanov)[https://github.com/ai-nikolai]:  2024 - Present
 <!-- bundle exec jekyll serve
  -->
 
