@@ -33,10 +33,13 @@ def transform_bibtex_entry(original_entry):
     # Remove trailing comma and newline at the end of the entry
     original_entry = original_entry.strip().rstrip(',')
     
+    new_fields = ['  bibtex_show = {true},']
+
     # Extract the journal for the abbr field
     # journal_match = re.search(r'journal\s*=\s*{([^}]+)}', original_entry)
     # abbr = journal_match.group(1).strip() if journal_match else ''
     
+
     # Extract the URL for the html field
     url_match = re.search(r'url\s*=\s*{([^}]+)}', original_entry)
     html = url_match.group(1).strip() if url_match else ''
@@ -44,6 +47,9 @@ def transform_bibtex_entry(original_entry):
         arxiv_number = extract_arxiv_number(original_entry)
         if arxiv_number:
             html = f"https://arxiv.org/abs/{arxiv_number}"
+            new_fields.append('  html = {' + html + '},')
+    # else: #don't need this as already present
+    #     new_fields.append('  html = {' + html + '},')
 
 
     pdf_match = re.search(r'pdf\s*=\s*{([^}]+)}', original_entry)
@@ -52,17 +58,16 @@ def transform_bibtex_entry(original_entry):
         arxiv_number = extract_arxiv_number(original_entry)
         if arxiv_number:
             pdf = f"https://arxiv.org/pdf/{arxiv_number}"
+            new_fields.append('  pdf = {' + pdf + '},')
+    # else: #don't need this as already present
+    #     new_fields.append('  pdf = {' + pdf + '},')
 
-    
-    # Prepare the new fields to insert
-    new_fields = [
-        '  html = {' + html + '},',
-        # f'   abbr = {{{abbr}}}',
-        '  abbr = { NLP },',
-        '  bibtex_show = {true},'
-        '  pdf = {' + pdf + '},'
-    ]
-    
+    abbr_match = re.search(r'abbr\s*=\s*{([^}]+)}', original_entry)
+    abbr = url_match.group(1).strip() if pdf_match else ''
+    if not abbr:
+        abbr = "NLP"
+        new_fields.append('  abbr = {' +abbr+ '},')
+       
     # Split the original entry into lines
     lines = original_entry.split('\n')
     
@@ -97,7 +102,11 @@ def extract_bibtex_entries(input_file):
     
     # Split the file into individual entries
     # This regex looks for entries starting with @ and ending with a closing }
-    pattern = r'@(?:[^@]*})'
+
+    # pattern = r'@(?:[^@]*})' #problem with @ inside bib entry
+    # pattern = r'@\w+\{(?:[^{}]*\{[^{}]*\}[^{}]*|[^{}])*\}' #does not work with tripple nesting of {}
+    # pattern = r'@\w+\{(?:[^{}]*\{[^{}]*\}[^{}]*|[^{}]|[^{}]*\{[^{}]*\{[^{}]*\}[^{}]*\}[^{}]*)*\}' #this one has three patterns of brackets inside outside brackets.
+    pattern = r'@\w+\{(?:[^{}]|[^{}]*\{[^{}]*\}[^{}]*|[^{}]*\{[^{}]*\{[^{}]*\}[^{}]*\}[^{}]*|[^{}]*\{[^{}]*\{[^{}]*\{[^{}]*\}[^{}]*\}[^{}]*\}[^{}]*)*\}' #zero, 1, 2 and 3 inside brackets.
     entries = re.findall(pattern, file_contents, re.DOTALL)
     
     return entries
