@@ -86,7 +86,7 @@ bundle exec jekyll serve -l -H localhost
 ---
 ## Where does stuff live?
 
-Code lives on github: https://github.com/ImperialNLP/imperialnlp.github.io
+Code lives on github: [https://github.com/ImperialNLP/imperialnlp.github.io]
 
 It consists of:
 
