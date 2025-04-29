@@ -64,9 +64,11 @@ def transform_bibtex_entry(original_entry):
 
     abbr_match = re.search(r'abbr\s*=\s*{([^}]+)}', original_entry)
     abbr = abbr_match.group(1).strip() if abbr_match else ''
-    if not abbr:
-        abbr = "NLP"
-        new_fields.append('  abbr = {' +abbr+ '},')
+
+    # ADD in if you want default tags for all papers.
+    # if not abbr:
+    #     abbr = "NLP"
+    #     new_fields.append('  abbr = {' +abbr+ '},')
        
     # Split the original entry into lines
     lines = original_entry.split('\n')
