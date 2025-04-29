@@ -17,12 +17,13 @@ profile:
     image: marek.png
     role: Faculty
     orcid: 
-    website: 
+    website: https://marekrei.com
     scholar: 
     email: marek.rei@imperial.ac.uk
     github: 
     linkedin: 
     supervisor: 
+    personal_site: true
     address: >
         Huxley 555<br />
         Imperial College London<br />

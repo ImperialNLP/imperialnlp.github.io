@@ -17,12 +17,13 @@ profile:
     image: lisa.png
     role: PhD
     orcid: 
-    website: 
+    website: https://lisaalaz.github.io/
     scholar: 
     email: lisa.alazraki20@imperial.ac.uk
     github: 
     linkedin: 
     supervisor: Dr Marek Rei
+    personal_site: true
     address: >
         Huxley 558<br />
         Imperial College London<br />

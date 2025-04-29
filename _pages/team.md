@@ -23,7 +23,8 @@ nav_rank: 2
             </div>
             <div class="team col-sm-8 col-md-9">
                 <div class="card-body">
-                    {% if member.inline == false %}{% if member.external == true %} <a href="{{ member.profile.website }}">
+                    {% if member.inline == false %}{% if member.external == true %} <a href="{{ member.profile.website }}">{% endif %}
+                    {% if member.profile.personal_site == true %} <a href="{{ member.profile.website }}">
                     {% else %}
                     <a href="{{ member.url | relative_url }}">
                     <!-- <a href="{{ member.profile.website }}"> -->

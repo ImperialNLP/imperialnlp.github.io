@@ -23,6 +23,7 @@ profile:
     github: 
     linkedin: 
     supervisor: 
+    personal_site: false
     address: >
         Huxley 572A<br />
         Imperial College London<br />

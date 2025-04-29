@@ -23,6 +23,7 @@ profile:
     github: 
     linkedin: 
     supervisor: Dr Marek Rei
+    personal_site: false
     address: >
         Huxley 558<br />
         Imperial College London<br />

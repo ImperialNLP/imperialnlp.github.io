@@ -23,6 +23,7 @@ profile:
     github: ai-nikolai
     linkedin: 
     supervisor: Dr Marek Rei
+    personal_site: true
     address: >
         Huxley 558<br />
         Imperial College London<br />
