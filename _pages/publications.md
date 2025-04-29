@@ -4,7 +4,7 @@ permalink: /publications/
 title: publications
 page-title: Publications
 description: Publications from the NLP Group.
-years: [2025,2024,2023,2022,2021,2020,2019,2018,2017,2016,2015,2014,2013]
+years: [2025,2024,2023,2022,2021,2020,2019] #,2018,2017,2016,2015,2014,2013]
 nav: true
 nav_order: 4
 ---
