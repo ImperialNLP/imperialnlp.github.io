@@ -53,7 +53,7 @@ def transform_bibtex_entry(original_entry):
 
 
     pdf_match = re.search(r'pdf\s*=\s*{([^}]+)}', original_entry)
-    pdf = url_match.group(1).strip() if pdf_match else ''
+    pdf = pdf_match.group(1).strip() if pdf_match else ''
     if not pdf:
         arxiv_number = extract_arxiv_number(original_entry)
         if arxiv_number:
@@ -63,7 +63,7 @@ def transform_bibtex_entry(original_entry):
     #     new_fields.append('  pdf = {' + pdf + '},')
 
     abbr_match = re.search(r'abbr\s*=\s*{([^}]+)}', original_entry)
-    abbr = url_match.group(1).strip() if pdf_match else ''
+    abbr = abbr_match.group(1).strip() if abbr_match else ''
     if not abbr:
         abbr = "NLP"
         new_fields.append('  abbr = {' +abbr+ '},')

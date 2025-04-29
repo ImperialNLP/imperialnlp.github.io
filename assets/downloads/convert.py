@@ -44,6 +44,7 @@ profile:
     github: {row['Github']}
     linkedin: {row['Linkedin']}
     supervisor: {row['Supervisor']}
+    personal_site: {'true' if row['Website'] else 'false'}
     address: >
         {row['Room']}<br />
         Imperial College London<br />
