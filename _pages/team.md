@@ -16,10 +16,11 @@ nav_rank: 2
 {% assign members = site.members | sort: "group_order" | sort: "lastname" | where: "group", group %}
     {% for member in members %}
 <p>
-    <div class="card {% if member.inline == false %}hoverable{% endif %}">
+<!--     <div class="card {% if member.inline == false %}hoverable{% endif %}"> -->
+    <div class="card">
         <div class="row no-gutters">
             <div class="col-sm-4 col-md-3">
-                <img src="{{ '/assets/img/team/' | append: member.profile.image | relative_url }}" class="card-img img-fluid" alt="{{ member.profile.name }}" />
+                <img src="{{ '/assets/img/team/' | append: member.profile.image | relative_url }}" class="card-img img-fluid" alt="{{ member.profile.name }}" style="width: 250px; height: 250px; object-fit: cover;" />
             </div>
             <div class="team col-sm-8 col-md-9">
                 <div class="card-body">
