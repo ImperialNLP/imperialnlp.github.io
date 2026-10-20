@@ -33,5 +33,5 @@ profile:
 
 ## Short Bio
 
-I am a PhD student at the Department of Computing of Imperial College London, supervised by Marek Rei. I am fascinated by large foundation models and work on enhancing their planning, reasoning, and general problem-solving abilities. I also have an interest in model robustness to input perturbations and adversarial attacks.
+I am a PhD student in the NLP Group at Imperial College London, advised by Marek Rei. I am broadly interested in generalisable learning, OOD robustness, and the relationship between reasoning and language.
 

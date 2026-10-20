@@ -13,11 +13,19 @@ def transform_tsv_to_yaml(input_file, output_dir='_members'):
 
     # Read the TSV file
     with open(input_file, 'r', encoding='utf-8') as tsv_file:
+    # with open(input_file, 'r') as tsv_file:
 
         tsv_reader = csv.DictReader(tsv_file) #, delimiter='\t') #in case we want tsv file instead.
 
         # Process each row (assuming single row in this case)
         for row in tsv_reader:
+            # Clean all key names
+            new_row = {}
+            for key, value in row.items():
+                cleaned_key = key.replace('\ufeff', '')
+                new_row[cleaned_key] = value
+            row = new_row
+            print(row.keys())
             # Generate the output
             output = f"""---
 layout: about

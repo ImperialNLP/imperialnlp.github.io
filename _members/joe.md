@@ -13,7 +13,7 @@ teaser: >
 
 profile:
     name: Joe Stacey
-    position: PhD
+    position: Graduated PhD
     image: joe.jpg
     role: PhD
     orcid: 

@@ -22,7 +22,7 @@ profile:
     email: nikolai.rozanov13@imperial.ac.uk
     github: ai-nikolai
     linkedin: 
-    supervisor: Dr Marek Rei
+    supervisor: Prof. Lucia Specia
     personal_site: true
     address: >
         Huxley 558<br />
