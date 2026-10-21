@@ -12,3 +12,6 @@ vendor
 assets/downloads/_members
 assets/downloads/_bibliography
 
+.mini
+
+__pycache__
