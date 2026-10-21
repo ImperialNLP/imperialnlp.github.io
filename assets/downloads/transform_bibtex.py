@@ -304,18 +304,13 @@ def accumulate_and_transform_bibtex(input_directory, output_file):
         print("---")
         print(f"Processing File:{filename}")
         # Check if the file is a .bib file
-        if filename.endswith('.bib'):
+        if filename.endswith('.bib') or filename.endswith('.bib.txt'):
             input_file = os.path.join(input_directory, filename)
             
             print("Extracting bib entries...")
             # Extract entries from the file
             entries = extract_bibtex_entries(input_file)
             print(f"Len entries in file:{len(entries)}")
-
-
-
-
-
 
             total_entries += len(entries)
 

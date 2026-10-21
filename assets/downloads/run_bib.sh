@@ -1,7 +1,7 @@
 #  FILE=OneDrive_1_16-04-2025.zip
 FILE=Bibliography
 
- mv ~/Downloads/$FILE ../bibliography
+ mv ~/Downloads/$FILE.zip ../bibliography
  cd ../bibliography
  unzip $FILE.zip
  mv $FILE/* .
