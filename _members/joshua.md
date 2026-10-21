@@ -2,7 +2,7 @@
 layout: about
 inline: false
 group: PhD
-group_rank: 2
+group_rank: 3
 
 title: Joshua Placidi
 lastname: Placidi
@@ -18,14 +18,14 @@ profile:
     role: PhD
     orcid: 
     website: https://joshuaplacidi.com/
-    scholar: https://scholar.google.com/citations?user=4_GP4xAAAAAJ
+    scholar: 4_GP4xAAAAAJ
     email: joshua.placidi25@imperial.ac.uk
     github: joshuaplacidi
-    linkedin: https://www.linkedin.com/in/joshua-placidi/
+    linkedin: joshua
     supervisor: Dr Marek Rei
     personal_site: true
     address: >
-        <br />
+        
         Imperial College London<br />
         London
 ---

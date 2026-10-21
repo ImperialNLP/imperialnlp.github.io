@@ -57,7 +57,7 @@ nav_rank: 2
                         <a href="https://github.com/{{ member.profile.github }}" class="card-link" target="_blank"><i class="fab fa-github"></i></a>
                     {% endif %}&nbsp; &nbsp;
                     {%- if member.profile.scholar -%}
-                        <a href="https://scholar.google.com/citations?user={{ page.profile.scholar }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                        <a href="https://scholar.google.com/citations?user={{ member.profile.scholar }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
                     {% endif %} &nbsp;
                     {% if member.profile.website %}
                         <a href="{{ member.profile.website }}" class="card-link" target="_blank"><i class="fas fa-globe"></i></a>

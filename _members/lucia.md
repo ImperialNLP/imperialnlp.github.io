@@ -2,7 +2,7 @@
 layout: about
 inline: false
 group: Faculty
-group_rank: 2
+group_rank: 1
 
 title: Prof. Lucia Specia
 lastname: Specia

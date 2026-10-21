@@ -2,7 +2,7 @@
 layout: about
 inline: false
 group: Faculty
-group_rank: 2
+group_rank: 1
 
 title: Dr Edoardo Ponti
 lastname: Ponti
@@ -18,10 +18,10 @@ profile:
     role: Faculty
     orcid: 
     website: https://ducdauge.github.io/
-    scholar: https://scholar.google.com/citations?user=tklL2q0AAAAJ
+    scholar: tklL2q0AAAAJ
     email: eponti@ic.ac.uk
     github: 
-    linkedin: https://www.linkedin.com/in/edoardo-maria-ponti/
+    linkedin: edoardo
     supervisor: 
     personal_site: true
     address: >

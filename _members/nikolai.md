@@ -2,7 +2,7 @@
 layout: about
 inline: false
 group: PhD
-group_rank: 2
+group_rank: 3
 
 title: Nikolai Rozanov
 lastname: Rozanov
@@ -21,7 +21,7 @@ profile:
     scholar: fi-feOEAAAAJ
     email: nikolai.rozanov13@imperial.ac.uk
     github: ai-nikolai
-    linkedin: 
+    linkedin: nikolai
     supervisor: Prof. Lucia Specia
     personal_site: true
     address: >

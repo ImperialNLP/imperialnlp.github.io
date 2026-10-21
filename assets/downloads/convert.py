@@ -1,6 +1,63 @@
 import os
 import csv
 import sys
+import re
+
+
+def clean_url(url, site):
+    """
+    Check if the URL is already an ID, and if not, extract the ID from the URL.
+    """
+    if not url:
+        return url
+
+    if site == "orcid":
+        if not url.startswith("http"):
+            return url
+        else:
+            return re.search(r"orcid\.org/(\w+)", url).group(1)
+    if site == "scholar":
+        if not url.startswith("http"):
+            return url
+        else:
+            return re.search(r"user=(\w+)", url).group(1)
+    if site == "linkedin":
+        if not url.startswith("http"):
+            return url
+        else:
+            return re.search(r"linkedin\.com/in/(\w+)", url).group(1)
+
+    if site == "github":
+        if not url.startswith("http"):
+            return url
+        else:
+            return re.search(r"github\.com/(\w+)", url).group(1)
+
+    return url
+
+def assign_group_rank(status):
+    """
+    Faculty -> 1
+    Postdoc -> 2
+    PhD -> 3
+    Fellow -> 4
+    Visitor -> 5
+    Alumni -> 6
+    """
+    if status.lower() == "faculty":
+        return 1
+    elif status.lower() == "postdoc":
+        return 2
+    elif status.lower() == "phd":
+        return 3
+    elif status.lower() == "fellow":
+        return 4
+    elif status.lower() == "visitor":
+        return 5
+    elif status.lower() == "alumni":
+        return 6
+    else:
+        return 7
 
 def transform_tsv_to_yaml(input_file, output_dir='_members'):
     """
@@ -31,7 +88,7 @@ def transform_tsv_to_yaml(input_file, output_dir='_members'):
 layout: about
 inline: false
 group: {row['Status']}
-group_rank: {1 if "marek rei" in row["Name"].lower() else 2}
+group_rank: {assign_group_rank(row['Status'])}
 
 title: {row['Name']}
 lastname: {row['Name'].split()[-1]}
@@ -45,16 +102,16 @@ profile:
     position: {row['Position']}
     image: {row['Picture']}
     role: {row['Status']}
-    orcid: {row['ORCID']}
-    website: {row['Website']}
-    scholar: {row['Google Scholar']}
+    orcid: {clean_url(row['ORCID'], 'orcid')}
+    website: {clean_url(row['Website'], 'website')}
+    scholar: {clean_url(row['Google Scholar'], 'scholar')}
     email: {row['Email']}
-    github: {row['Github']}
-    linkedin: {row['Linkedin']}
+    github: {clean_url(row['Github'], 'github')}
+    linkedin: {clean_url(row['Linkedin'], 'linkedin')}
     supervisor: {row['Supervisor']}
     personal_site: {'true' if row['Website'] else 'false'}
     address: >
-        {row['Room']}<br />
+        {row['Room']}{'<br />' if row['Room'] else ''}
         Imperial College London<br />
         London
 ---

@@ -2,7 +2,7 @@
 layout: about
 inline: false
 group: Fellow
-group_rank: 2
+group_rank: 4
 
 title: Dr Shamsuddeen Hassan Muhammad
 lastname: Muhammad
@@ -16,16 +16,16 @@ profile:
     position: Fellow
     image: shamsuddee.png
     role: Fellow
-    orcid: https://orcid.org/0000-0001-7708-0799
+    orcid: 0000
     website: https://shmuhammadd.github.io
-    scholar: https://scholar.google.com/citations?user=Ne1nt4gAAAAJ&hl=en
+    scholar: Ne1nt4gAAAAJ
     email: s.muhammad@imperial.ac.uk
-    github: https://github.com/shmuhammadd
-    linkedin: https://www.linkedin.com/in/shmuhammad/
+    github: shmuhammadd
+    linkedin: shmuhammad
     supervisor: 
     personal_site: true
     address: >
-        <br />
+        
         Imperial College London<br />
         London
 ---

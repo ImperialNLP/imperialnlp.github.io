@@ -2,7 +2,7 @@
 layout: about
 inline: false
 group: Faculty
-group_rank: 2
+group_rank: 1
 
 title: Dr Oana-Maria Camburu
 lastname: Camburu
@@ -18,10 +18,10 @@ profile:
     role: Faculty
     orcid: 
     website: 
-    scholar: https://scholar.google.co.uk/citations?user=yIg7b2gAAAAJ&hl=en&authuser=1
+    scholar: yIg7b2gAAAAJ
     email: o.camburu@imperial.ac.uk
     github: 
-    linkedin: https://www.linkedin.com/in/oanacamburu/
+    linkedin: oanacamburu
     supervisor: 
     personal_site: false
     address: >

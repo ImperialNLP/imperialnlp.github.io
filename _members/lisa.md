@@ -2,7 +2,7 @@
 layout: about
 inline: false
 group: PhD
-group_rank: 2
+group_rank: 3
 
 title: Lisa Alazraki
 lastname: Alazraki

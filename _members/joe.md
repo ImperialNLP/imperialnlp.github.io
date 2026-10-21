@@ -1,8 +1,8 @@
 ---
 layout: about
 inline: false
-group: PhD
-group_rank: 2
+group: Past Member
+group_rank: 7
 
 title: Joe Stacey
 lastname: Stacey
@@ -15,17 +15,17 @@ profile:
     name: Joe Stacey
     position: Graduated PhD
     image: joe.jpg
-    role: PhD
+    role: Past Member
     orcid: 
     website: 
-    scholar: 
+    scholar: QCHR82MAAAAJ
     email: j.stacey20@imperial.ac.uk
     github: 
     linkedin: 
     supervisor: Dr Marek Rei
     personal_site: false
     address: >
-        Huxley 558<br />
+        
         Imperial College London<br />
         London
 ---
