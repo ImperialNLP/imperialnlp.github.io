@@ -5,9 +5,7 @@ layout: default
 <!-- about.html -->
       <div class="post">
         <header class="post-header">
-          <h1 class="post-title">
-           <!--{% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %} -->
-          </h1>
+          <h1 class="post-title"></h1>
           <p class="desc">{{ page.subtitle }}</p>
         </header>
 
@@ -28,7 +26,6 @@ layout: default
               <span class="data">
             {% if page.profile.position %}<br />{{ page.profile.position }}{% endif %}
             <br />
-            <!-- {% if page.profile.phone %}<br /><a href="tel:{{ page.profile.phone }}"><i class="fas fa-phone"></i> {{ page.profile.phone }}</a>{% endif %} -->
             {% if page.profile.orcid %}<br /><a href="https://orcid.org/{{ page.profile.orcid }}" target="_blank"><i class="fab fa-orcid"></i> {{ page.profile.orcid }}</a>{% endif %}
             {% if page.profile.twitter %}<br /><a href="https://twitter.com/{{ page.profile.twitter }}" target="_blank"><i class="fab fa-twitter"></i> {{ page.profile.twitter }}</a>{% endif %}
             {% if page.profile.linkedin %}<br /><a href="https://linkedin.com/{{ page.profile.linkedin }}" class="card-link" target="_blank"><i class="fab fa-linkedin"></i> {{ page.profile.linkedin }}</a>{% endif %}
@@ -46,12 +43,6 @@ layout: default
           <br />
           Supervisor: <p class="post">{{ page.profile.supervisor }}</p>
           {% endif %}
-          <!-- {% if page.profile.logos %}
-          <div><a href="https://inbt.jhu.edu"><img class="layout_commented"  style="margin-bottom: 20px" img src="{{ '/assets/img/logos/INBT-logo.png' |   relative_url }}" height="60"></a>
-            <a href="https://breakthroughcancer.org"><img class="layout_commented" style="margin-bottom: 20px" img src="{{ '/assets/img/logos/BTC-logo.png' |   relative_url }}" height="60" ></a>
-          </div>
-
-           {% endif %} -->
         </div>
       {% endif %}
           </div>
@@ -62,15 +53,10 @@ layout: default
           {%- else %}
           <div class="clearfix">
               <div class="about-logo">
-              <!-- <img style="padding-bottom: 1rem; margin-right: 2rem"; src="{{ '/assets/img/imperial-main-image.jpg' |   relative_url }}"; width=80%> -->
               <img style="padding-bottom: 1rem; margin-right: 2rem"; src="{{ '/assets/img/imperial-other-image.jpg' |   relative_url }}"; width=98%>
 
             </div>
-            {% if page.profile -%}
-            {%- else %}
             {{ content }}
-            {%- endif %}
-            <!-- <img style="padding-bottom: 1rem; margin-right: 2rem"; src="{{ '/assets/img/imperial-other-image.jpg' |   relative_url }}"; width=80%> -->
 
 
           </div>

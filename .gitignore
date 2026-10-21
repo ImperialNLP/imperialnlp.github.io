@@ -3,7 +3,7 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-.DS_store
+.DS_Store
 .ruby-version
 .tweet-cache
 Gemfile.lock
@@ -14,4 +14,6 @@ assets/downloads/_bibliography
 
 .mini
 
-__pycache__
+# local development environment
+env_py/
+__pycache__/
