@@ -24,17 +24,17 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 <h1> NLP Group @ Imperial College London </h1>
-The NLP Group aims to develop machine learning algorithms for language understanding and generation following a holistic approach where language can be combined with other types of information. In addition to textual context of varying length, our models also sometimes include knowledge in the form of images, videos, audio recordings, sensor data, metadata and knowledge bases. 
+The NLP Group at Imperial College London is at the forefront of developing machine learning algorithms for language understanding and generation. Our research takes a holistic approach, combining language with various types of information to create models that are more comprehensive and effective. By integrating textual context with knowledge from images, videos, audio recordings, sensor data, metadata, and knowledge bases, we push the boundaries of what's possible in NLP.
 
-Machine learning is at the core of our research. The main areas we work on include large language models (LLMs), robustness & generalisation, LLM reasoning, LLM agents, language generation, machine translation, text adaptation, transfer learning for language, NLP for health and sustainable development, quality evaluation and estimation, and language learning applications.
+At the core of our work is machine learning, and we focus on a wide range of areas including large language models (LLMs), robustness and generalisation, LLM reasoning, LLM agents, language generation, machine translation, text adaptation, transfer learning for language, NLP for health and sustainable development, quality evaluation and estimation, and language learning applications.
 
-
-<h3>Topics we work on in NLP 🌍💬</h3>
+<h3>Topics we work on in NLP</h3>
 <ul>
-    <li>LLLM Reasoning & Agents 🤖🔬</li>
-    <li>Natural Language Inference 🧠🔍</li>
-    <li>Robustness & Generalisation 💪🌐</li>
-    <li>Explainability in NLP 💡🗣️</li>
-    <li>NLP for Healthcare ❤️👩‍⚕️</li>
+    <li>LLM Reasoning & Agents</li>
+    <li>Natural Language Inference</li>
+    <li>Robustness & Generalisation</li>
+    <li>Explainability in NLP</li>
+    <li>NLP for Healthcare</li>
 </ul>
+
 
