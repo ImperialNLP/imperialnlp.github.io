@@ -1,8 +1,10 @@
 #  FILE=OneDrive_1_16-04-2025.zip
-FILE=Bibliography.zip
+FILE=Bibliography
 
-#  mv ~/Downloads/$FILE ../bibliography
+ mv ~/Downloads/$FILE.zip ../bibliography
  cd ../bibliography
- unzip $FILE
+ unzip $FILE.zip
+ mv $FILE/* .
+rm $FILE.zip
  cd ../downloads
  python3 transform_bibtex.py production
