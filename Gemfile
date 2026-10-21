@@ -21,3 +21,10 @@ group :other_plugins do
     gem 'httparty'
     gem 'feedjira'
 end
+
+# Ruby 3.4/3.5 removed these from the default gems, but jekyll-scholar and
+# html-pipeline still load them directly. Pin them so builds stay warning-free.
+group :stdlib_compat do
+    gem 'observer'
+    gem 'ostruct'
+end
