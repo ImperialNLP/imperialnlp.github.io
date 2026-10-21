@@ -16,7 +16,6 @@ nav_rank: 2
 {% assign members = site.members | sort: "group_order" | sort: "lastname" | where: "group", group %}
     {% for member in members %}
 <p>
-<!--     <div class="card {% if member.inline == false %}hoverable{% endif %}"> -->
     <div class="card">
         <div class="row no-gutters">
             <div class="col-sm-4 col-md-3">
@@ -28,7 +27,6 @@ nav_rank: 2
                     {% if member.profile.personal_site == true %} <a href="{{ member.profile.website }}">
                     {% else %}
                     <a href="{{ member.url | relative_url }}">
-                    <!-- <a href="{{ member.profile.website }}"> -->
                     {% endif %}{% endif %}
                     <h5 class="card-title">{{ member.profile.name }}</h5>
                     {% if member.profile.position %}

@@ -18,6 +18,4 @@ nav_order: 4
 
 </div>
 
-  <!-- {% bibliography -q @*[year={{y}}]* %} -->
-  <!-- {% bibliography -f papers -q @*[year={{y}}]* %} -->
 
